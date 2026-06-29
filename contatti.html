@@ -35,7 +35,17 @@
     <div>
       <h2 class="serif h2">Scrivici</h2>
       <p class="muted" style="margin-top:12px; margin-bottom:24px;">Compila il modulo e ti risponderemo entro 48 ore lavorative.</p>
-      <form class="form" onsubmit="event.preventDefault(); alert('Grazie! Ti ricontatteremo a breve.');">
+
+      <form class="form" id="contact-form" onsubmit="
+        event.preventDefault();
+        var email = document.getElementById('email').value;
+        var anchor = document.getElementById('form-success-email');
+        anchor.textContent = email;
+        anchor.href = 'mailto:' + email;
+        document.getElementById('form-success').style.display='block';
+        this.reset();
+      ">
+
         <div>
           <label for="nome">Nome e cognome</label>
           <input id="nome" type="text" required />
@@ -53,8 +63,14 @@
           <textarea id="msg" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="justify-self:start;">Invia messaggio →</button>
+
+        <div id="form-success" style="display:none; margin-top:16px; padding:16px; background:#f0faf4; border-left:3px solid var(--accent); color:var(--primary);">
+          Grazie! Ti ricontatteremo a breve all'indirizzo:
+          <a id="form-success-email" href="#" style="color:var(--accent);"></a>
+        </div>
       </form>
     </div>
+
     <div>
       <h2 class="serif h2">Informazioni</h2>
       <div style="margin-top:24px;">
