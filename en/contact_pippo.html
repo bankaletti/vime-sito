@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — V.I.M.E. S.R.L.</title>
+<meta name="description" content="Contact V.I.M.E. S.R.L. for international import/export opportunities. Headquartered in Arienzo (CE), Italy." />
+<link rel="stylesheet" href="https://vimesrl.online/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="https://vimesrl.online/en/index.html" class="brand">V.I.M.E.</a>
+    <nav class="nav-links">
+      <a href="https://vimesrl.online/en/index.html">Home</a>
+      <a href="https://vimesrl.online/en/about.html">About</a>
+      <a href="https://vimesrl.online/en/services.html">Services</a>
+      <a href="https://vimesrl.online/en/contact.html" class="active">Contact</a>
+    </nav>
+    <div class="lang-switch"><a href="https://vimesrl.online/contatti.html">IT</a><span class="lang-active">EN</span></div>
+  </div>
+</header>
+
+<section class="block" style="padding-top:80px; padding-bottom:40px;">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h1 class="serif h1" style="margin-top:12px;">Let's talk about your project.</h1>
+    <p class="muted" style="margin-top:24px; font-size:18px; max-width:640px;">We are available to explore commercial partnerships, import/export opportunities, and strategic collaborations.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container split">
+    <div>
+      <h2 class="serif h2">Write to us</h2>
+      <p class="muted" style="margin-top:12px; margin-bottom:24px;">Fill in the form and we will get back to you within 48 business hours.</p>
+      <form class="form" id="contact-form" onsubmit="
+        event.preventDefault();
+        var email = document.getElementById('email').value;
+        var anchor = document.getElementById('form-success-email');
+        anchor.textContent = email;
+        anchor.href = 'mailto:' + email;
+        document.getElementById('form-success').style.display='block';
+        this.reset();
+      ">
+        <div>
+          <label for="nome">Full name</label>
+          <input id="nome" type="text" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+        </div>
+        <div>
+          <label for="azienda">Company</label>
+          <input id="azienda" type="text" />
+        </div>
+        <div>
+          <label for="msg">Message</label>
+          <textarea id="msg" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="justify-self:start;">Send message →</button>
+        <div id="form-success" style="display:none; margin-top:16px; padding:16px; background:#f0faf4; border-left:3px solid var(--accent); color:var(--primary);">
+          Thank you! We will get back to you shortly at:
+          <a id="form-success-email" href="#" style="color:var(--accent);"></a>
+        </div>
+      </form>
+    </div>
+    <div>
+      <h2 class="serif h2">Information</h2>
+      <div style="margin-top:24px;">
+        <div style="margin-bottom:24px;">
+          <p class="eyebrow">Registered office</p>
+          <p style="margin-top:8px; color:var(--primary); font-weight:500;">V.I.M.E. S.R.L.</p>
+          <p class="muted">Via Sant'Alfonso 10<br/>81021 Arienzo (CE)<br/>Italy</p>
+        </div>
+        <div style="margin-bottom:24px;">
+          <p class="eyebrow">Email</p>
+          <p style="margin-top:8px;"><a href="mailto:vimesrl.2025@gmail.com" style="color:var(--accent);">vimesrl.2025@gmail.com</a></p>
+        </div>
+        <div>
+          <p class="eyebrow">Office hours</p>
+          <p class="muted" style="margin-top:8px;">Monday – Friday<br/>9:00 – 18:00 CET</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container grid">
+    <div>
+      <div class="brand" style="margin-bottom:12px;">V.I.M.E. S.R.L.</div>
+      <p>International commercial brokerage. Raw materials and wood derivatives, and non-perishable food products.</p>
+    </div>
+    <div>
+      <h4>Office</h4>
+      <p>Via Sant'Alfonso 10</p>
+      <p>81021 Arienzo (CE)</p>
+      <p>Italy</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <a href="https://vimesrl.online/en/index.html">Home</a>
+      <a href="https://vimesrl.online/en/about.html">About</a>
+      <a href="https://vimesrl.online/en/services.html">Services</a>
+      <a href="https://vimesrl.online/en/contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="container copyright">© 2026 V.I.M.E. S.R.L. — All rights reserved</div>
+</footer>
+
+</body>
+</html>
